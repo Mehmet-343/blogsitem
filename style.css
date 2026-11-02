@@ -13,11 +13,6 @@
 @media(max-width:600px){.container{width:calc(100% - 30px)}.site-header{padding:10px 0}.nav{min-height:59px;padding:0 13px;border-radius:15px}.brand{font-size:1.05rem}.brand-mark{width:31px;height:31px}.hero{padding-top:125px;min-height:auto}.hero h1,.page-intro h1{font-size:clamp(2.65rem,12vw,4rem)}.hero-lead,.page-lead{font-size:.96rem}.hero-actions{flex-direction:column;align-items:stretch}.button{width:100%}.hero-meta{gap:12px;flex-direction:column}.hero-visual{min-height:320px;margin-top:0}.code-window{width:95%}.code-lines{padding:20px 13px;font-size:.66rem}.visual-orbit.orbit-one{width:320px;height:220px}.visual-orbit.orbit-two{width:300px;height:340px}.floating-chip{font-size:.68rem;padding:9px 10px}.chip-top{top:18px;right:0}.chip-bottom{bottom:20px;left:0}.scroll-cue{display:none}.section{padding-block:65px}.about-grid,.project-grid,.skill-groups,.interest-grid,.contact-grid{grid-template-columns:1fr}.about-grid .info-card:last-child{grid-column:auto}.info-card,.skill-card,.interest-card{padding:23px}.project-art{height:175px}.tech-cloud{gap:8px}.tech-cloud span{padding:13px}.cta-panel{padding:25px;align-items:stretch;flex-direction:column;margin-top:45px}.cta-panel .button{width:100%}.footer-inner{gap:13px}.footer-inner>p{font-size:.72rem}.footer-social{margin-left:auto}.subpage{padding-top:125px;padding-bottom:55px}.page-lead{margin-bottom:30px}.portfolio-item{grid-template-columns:1fr;gap:12px;padding:12px}.portfolio-visual{min-height:165px}.portfolio-detail{padding:10px 7px 12px}.timeline{padding-left:23px}.timeline-marker{left:-30px}.timeline-item{padding-left:12px}.contact-card{padding:17px;gap:12px}.contact-card p{max-width:210px}.quote-panel{padding:22px 20px}.quote-panel p{font-size:1.05rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
-/* =========================================
-   GEZİLERİM SAYFASI
-   SÜHA.blog tasarımına özel
-   ========================================= */
-
 .trip-hero {
   padding: 12px 0 65px;
 }
@@ -207,7 +202,6 @@
   transform: translate(3px, -3px);
 }
 
-/* Sayfanın altındaki kapanış bölümü */
 .trip-quote {
   display: flex;
   align-items: center;
@@ -254,7 +248,6 @@
   letter-spacing: -0.04em;
 }
 
-/* Tablet */
 @media (max-width: 900px) {
   .trip-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -269,7 +262,6 @@
   }
 }
 
-/* Telefon */
 @media (max-width: 600px) {
   .trip-hero {
     padding-top: 0;
@@ -314,9 +306,6 @@
     margin-top: 45px;
   }
 }
-/* =========================================
-   PREMIUM POLISH — Sunum kalitesi
-   ========================================= */
 
 :root {
   --glow-purple: 0 0 40px rgba(155, 140, 255, 0.18);
@@ -430,7 +419,6 @@ body {
   background: rgba(155, 140, 255, 0.08);
 }
 
-/* Trip image fallback when photo missing */
 .trip-image {
   background:
     linear-gradient(145deg, #1a2035, #0f1424),
@@ -446,7 +434,6 @@ body {
   opacity: 0;
 }
 
-/* Portfolio visual depth */
 .portfolio-item {
   transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
 }
@@ -467,7 +454,6 @@ body {
   background: rgba(155, 140, 255, 0.06);
 }
 
-/* Brand mark subtle pulse on load */
 .brand-mark {
   transition: transform 0.25s, box-shadow 0.25s;
 }
@@ -477,13 +463,11 @@ body {
   box-shadow: 0 8px 28px rgba(120, 103, 228, 0.4);
 }
 
-/* Selection color */
 ::selection {
   background: rgba(155, 140, 255, 0.35);
   color: #fff;
 }
 
-/* Smoother focus */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--cyan);
@@ -495,10 +479,6 @@ button:focus-visible {
     animation: none;
   }
 }
-
-/* =========================================
-   İLETİŞİM FORMU
-   ========================================= */
 
 .contact-form {
   max-width: 640px;
@@ -586,10 +566,6 @@ button:focus-visible {
   }
 }
 
-/* =========================================
-   FORM — E-posta & dosya yükleme
-   ========================================= */
-
 .form-group label {
   display: inline-flex;
   align-items: center;
@@ -626,7 +602,6 @@ button:focus-visible {
   padding-left: 42px;
 }
 
-/* Dosya yükleme alanı */
 .file-drop {
   display: block;
   cursor: pointer;
@@ -707,7 +682,6 @@ button:focus-visible {
   color: #70e8bb;
 }
 
-/* Mesaj kutusu + sağ alt dosya ikonu */
 .message-box {
   position: relative;
 }
@@ -809,7 +783,6 @@ button:focus-visible {
   display: block;
 }
 
-/* Marka logoları — LinkedIn / GitHub */
 .contact-icon.brand-linkedin {
   color: #0A66C2;
   background: rgba(10, 102, 194, 0.12);
@@ -839,7 +812,6 @@ button:focus-visible {
   border-color: rgba(255, 255, 255, 0.28);
 }
 
-/* İletişim — form + yan panel */
 .contact-layout {
   display: grid;
   grid-template-columns: 1.35fr 0.85fr;
@@ -951,7 +923,6 @@ button:focus-visible {
   }
 }
 
-/* İletişim yan panel — sadece simgeler */
 .contact-aside {
   display: grid;
   place-items: center;
@@ -1040,7 +1011,6 @@ button:focus-visible {
   }
 }
 
-/* İletişim yan panel — büyük mesaj simgesi */
 .contact-aside {
   display: grid;
   place-items: center;
@@ -1093,8 +1063,6 @@ button:focus-visible {
   }
 }
 
-
-/* === SOSYAL MEDYA İKONLARI: görünürlük düzeltmesi (tasarımı değiştirmez) === */
 .contact-card .contact-icon,
 .footer-social a {
   display: inline-flex;
