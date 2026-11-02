@@ -16,7 +16,6 @@
   <script defer src="script.js"></script>
 
   <style>
-    /* TEMEL RESET VE KOYU TEMA ARKA PLANI */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -39,7 +38,6 @@
       padding: 0 20px;
     }
 
-    /* MODERN BÖLÜM GEÇİŞ ANİMASYONU */
     @keyframes smoothEntrance {
       0% {
         opacity: 0;
@@ -55,14 +53,12 @@
 
     main.subpage {
       animation: smoothEntrance 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-      /* Navbarın hemen altına, ideal yakınlığa çekildi */
       padding-top: 52px !important;
       padding-bottom: 50px;
       padding-left: 20px;
       padding-right: 20px;
     }
 
-    /* HEADER & NAVİGASYON */
     .site-header {
       padding: 20px 0;
       width: 100%;
@@ -106,7 +102,6 @@
       color: #60a5fa;
     }
 
-    /* FLUTTER ETİKETİ */
     .flutter-badge {
       display: inline-flex;
       align-items: center;
@@ -125,7 +120,6 @@
       flex-shrink: 0;
     }
 
-    /* ANA İÇERİK */
     .subpage {
       flex: 1;
     }
@@ -165,7 +159,6 @@
       line-height: 1.6;
     }
 
-    /* İLETİŞİM KARTLARI GRID */
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -243,7 +236,6 @@
       flex-shrink: 0;
     }
 
-    /* TEK SATIR FOOTER */
     .site-footer {
       padding: 25px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -282,7 +274,6 @@
       margin-left: 8px;
     }
 
-    /* SVG İKON GÜVENCESİ */
     svg {
       display: block;
       width: 24px;
@@ -338,7 +329,6 @@
 <body>
   <div class="site-noise" aria-hidden="true"></div>
 
-  <!-- NAVBAR -->
   <header class="site-header">
     <nav class="nav" aria-label="Ana menü">
       <a class="brand" href="index.html">
@@ -363,7 +353,6 @@
     </nav>
   </header>
 
-  <!-- ANA İÇERİK -->
   <main class="subpage container">
     <div class="page-intro">
       <p class="section-kicker">SÜHA AKYEL / İLETİŞİM</p>
@@ -378,7 +367,6 @@
         Yazılım projeleri, iş birlikleri veya fikirlerinizi paylaşmak için sosyal medya hesaplarımdan bana ulaşabilirsiniz.
       </p>
 
-      <!-- FLUTTER YAN YANA ROZET -->
       <div style="margin-top: 15px;">
         <span class="flutter-badge">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -388,10 +376,8 @@
         </span>
       </div>
 
-      <!-- İLETİŞİM KARTLARI -->
       <div class="contact-grid">
 
-        <!-- INSTAGRAM -->
         <a class="contact-card" href="https://www.instagram.com/suha_akyel/" target="_blank" rel="noopener noreferrer">
           <div class="contact-icon instagram" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -408,7 +394,6 @@
           <i data-lucide="arrow-up-right" class="contact-arrow"></i>
         </a>
 
-        <!-- GITHUB -->
         <a class="contact-card" href="https://github.com/Mehmet-343" target="_blank" rel="noopener noreferrer">
           <div class="contact-icon github" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -423,7 +408,6 @@
           <i data-lucide="arrow-up-right" class="contact-arrow"></i>
         </a>
 
-        <!-- LINKEDIN -->
         <a class="contact-card" href="https://www.linkedin.com/in/mehmet-s%C3%BCha-akyel-0414a8300" target="_blank" rel="noopener noreferrer">
           <div class="contact-icon linkedin" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -438,7 +422,6 @@
           <i data-lucide="arrow-up-right" class="contact-arrow"></i>
         </a>
 
-        <!-- E-POSTA -->
         <a class="contact-card" href="mailto:suhaakyel03@gmail.com?subject=Web%20Sitem%20%C3%9Czerinden%20%C4%B0leti%C5%9Fim">
           <div class="contact-icon email" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -458,12 +441,10 @@
     </div>
   </main>
 
-  <!-- TEK SATIR FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner-single-line">
         
-        <!-- SOL: LOGO + METİN -->
         <div class="footer-left">
           <a class="brand" href="index.html">
             <span class="brand-mark">S</span>
@@ -472,7 +453,6 @@
           <p>Merakla öğren, emekle geliştir.</p>
         </div>
 
-        <!-- SAĞ: TELİF YAZISI -->
         <div class="footer-right">
           <span class="footer-copyright">© <span id="current-year"></span> Süha Akyel</span>
         </div>
@@ -481,7 +461,6 @@
     </div>
   </footer>
 
-  <!-- İKONLARI VE YIL BİLGİSİNİ YÜKLEYEN SCRİPT -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       if (window.lucide) {
