@@ -39,7 +39,7 @@
       padding: 0 20px;
     }
 
-    /* MODERN BÖLÜM GEÇİŞ ANİMASYONU (SADE & ZARİF) */
+    /* MODERN BÖLÜM GEÇİŞ ANİMASYONU */
     @keyframes smoothEntrance {
       0% {
         opacity: 0;
@@ -55,12 +55,19 @@
 
     main.subpage {
       animation: smoothEntrance 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      /* Navbarın hemen altına, ideal yakınlığa çekildi */
+      padding-top: 52px !important;
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     /* HEADER & NAVİGASYON */
     .site-header {
       padding: 20px 0;
       width: 100%;
+      position: relative;
+      z-index: 50;
     }
 
     .nav {
@@ -99,7 +106,7 @@
       color: #60a5fa;
     }
 
-    /* FLUTTER ETİKETİ - İDEAL ORTA BOYUT */
+    /* FLUTTER ETİKETİ */
     .flutter-badge {
       display: inline-flex;
       align-items: center;
@@ -121,22 +128,28 @@
     /* ANA İÇERİK */
     .subpage {
       flex: 1;
-      padding: 60px 20px;
+    }
+
+    .page-intro {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: #60a5fa;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
 
     .page-intro h1 {
       font-family: "Space Grotesk", sans-serif;
       font-size: 2.8rem;
       color: #fff;
-      margin: 15px 0;
+      margin: 8px 0 14px 0;
       line-height: 1.2;
-    }
-
-    .section-kicker {
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      color: #60a5fa;
-      font-weight: 700;
     }
 
     .gradient-text {
@@ -157,7 +170,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 20px;
-      margin-top: 40px;
+      margin-top: 35px;
     }
 
     .contact-card {
@@ -290,8 +303,11 @@
       fill: currentColor;
       stroke: none;
     }
-   
+    
     @media (max-width: 850px) {
+      main.subpage {
+        padding-top: 45px !important;
+      }
       .footer-inner-single-line {
         flex-direction: column;
         align-items: center;
@@ -408,7 +424,7 @@
         </a>
 
         <!-- LINKEDIN -->
-        <a class="contact-card" href="https://www.linkedin.com/in/mehmet-süha-akyel-0414a8300" target="_blank" rel="noopener noreferrer">
+        <a class="contact-card" href="https://www.linkedin.com/in/mehmet-s%C3%BCha-akyel-0414a8300" target="_blank" rel="noopener noreferrer">
           <div class="contact-icon linkedin" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/>
